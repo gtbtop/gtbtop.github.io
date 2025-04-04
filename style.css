@@ -26,13 +26,14 @@ nav ul {
   justify-content: center;
   gap: 50px;
   align-items: center;
+  padding-left: 10px;
 }
 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 1.4rem;
+  font-size: 22px;
 }
 
 .icons {
@@ -157,8 +158,6 @@ button.green:hover {
 .profile {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
-  /* object-position: center; */
 }
 
 #main p.worked {
@@ -167,14 +166,12 @@ button.green:hover {
 
 .partners {
   width: 100%;
-  /* background-color: aqua; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
   row-gap: 10px;
-  /* height: ; */
 }
 
 .box {
@@ -217,9 +214,6 @@ button.green:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  /* width: 100%; */
-  /* padding-bottom: 100px; */
 }
 
 .text h1 {
@@ -385,7 +379,7 @@ button.aqua:hover {
   width: 500px;
   height: 250px;
   border: 2px solid;
-  border-image: linear-gradient(90deg, #484848, #000000) 1;
+  border-image: linear-gradient(90deg, #484848, #080808) 1;
   border-radius: 20px;
 }
 
@@ -409,7 +403,6 @@ button.aqua:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
   gap: 30px;
 }
 
@@ -454,14 +447,12 @@ button.aqua:hover {
 }
 
 #recent_work .content {
-  /* height: 400px; */
   width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: baseline;
   gap: 20px;
-  /* background-color: red; */
   height: auto;
 }
 
@@ -476,7 +467,6 @@ button.aqua:hover {
 .slider_buttons {
   width: 100%;
   margin-top: -450px;
-  /* background-color: red; */
   position: absolute;
   display: flex;
   justify-content: center;
@@ -492,7 +482,6 @@ button.aqua:hover {
   font-size: 40px;
   align-items: center;
   justify-content: center;
-  /* border-color: #9C9C9C; */
   border: 3px solid #9C9C9C;
   color: #9C9C9C;
   font-family: 'IBM Plex Mono', monospace;
@@ -501,7 +490,8 @@ button.aqua:hover {
 
 #get_in_touch {
   width: 100%;
-  height: 900px;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 #get_in_touch h1 {
@@ -510,7 +500,6 @@ button.aqua:hover {
 }
 
 #get_in_touch .content {
-  /* background-color: red; */
   flex-direction: column;
   gap: 25px;
   height: 550px;
@@ -694,4 +683,46 @@ footer {
     flex-direction: column;
     height: 600px;
   }
+}
+
+@media (max-width: 500px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+  #main .text {
+    align-items: center;
+    text-align: center;
+  }
+  button.home {
+    width: 300px;
+  }
+  p.middle {
+    width: 300px;
+  }
+
+  #recent_work .content {
+    align-items: center;
+  }
+
+  #recent_work img {
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    width: 240px;
+  }
+
+  .submit {
+    width: 250px;
+  }
+
+  .client {
+    width: 300px;
+  }
+  .client_name {
+    margin-left: 10px;
+  }
+
 }
