@@ -54,18 +54,18 @@ nav ul li a {
 }
 
 .linkedin_icon {
-  background-image: url("LinkedIn.svg");
+  background-image: url("resources/LinkedIn.svg");
   background-size: 50%;
 }
 
 .behance_icon {
-  background-image: url("Behance.svg");
+  background-image: url("resources/Behance.svg");
   background-position-y: 55%;
   background-size: 65%;
 }
 
 .x_icon {
-  background-image: url("x.svg");
+  background-image: url("resources/x.svg");
   background-size: 50%;
 }
 
@@ -187,23 +187,23 @@ button.green:hover {
 }
 
 .logo1 {
-  background-image: url("Logo1.png");
+  background-image: url("resources/Logo1.webp");
 }
 
 .logo2 {
-  background-image: url("Logo2.png");
+  background-image: url("resources/Logo2.webp");
 }
 
 .logo3 {
-  background-image: url("Logo3.png");
+  background-image: url("resources/Logo3.webp");
 }
 
 .logo4 {
-  background-image: url("Logo4.png");
+  background-image: url("resources/Logo4.webp");
 }
 
 .logo5 {
-  background-image: url("Logo5.png");
+  background-image: url("resources/Logo5.webp");
 }
 
 #case_studies {
