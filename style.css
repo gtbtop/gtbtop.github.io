@@ -627,7 +627,11 @@ footer {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) { 
+  #hide.icons {
+    display: none;
+  }
+
   #main .content {
     height: 850px;
   }
@@ -635,9 +639,6 @@ footer {
   .box {
     width: 150px;
     height: 60px;
-  }
-  header#hide {
-    display: hidden;
   }
 
   .client {
