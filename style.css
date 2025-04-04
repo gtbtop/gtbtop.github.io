@@ -64,7 +64,7 @@ nav ul li a {
   background-size: 65%;
 }
 
-.x_icon{
+.x_icon {
   background-image: url("x.svg");
   background-size: 50%;
 }
@@ -72,7 +72,7 @@ nav ul li a {
 #main {
   /* background-color: aqua; */
   width: 100%;
-  height: 900px;
+  height: auto;
   display: block;
 }
 
@@ -173,6 +173,7 @@ button.green:hover {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  row-gap: 10px;
   /* height: ; */
 }
 
@@ -208,12 +209,8 @@ button.green:hover {
 #case_studies {
   background-color: #ffffff;
   width: 100%;
-  height: 1500px;
+  height: auto;
   display: block;
-}
-
-#case_studies .content {
-  margin-top: 100px;
 }
 
 #case_studies .text {
@@ -243,23 +240,15 @@ button.green:hover {
 }
 
 #case_studies .content {
-  height: 300px;
+  height: 400px;
   width: 100%;
   gap: 50px;
-}
-
-.test {
-  width: 100px;
-  height: 100px;
-  /* background-color: aqua; */
 }
 
 .text.left {
   align-items: left;
   justify-self: left;
-  width: 26%;
-  /* margin-left: 50px;
-  margin-right: 50px; */
+  width: 400px;
 }
 
 #testimonials .left {
@@ -361,7 +350,7 @@ button.aqua:hover {
 
 .img_slide {
   /* overflow: hidden; */
-  height: 110%;
+  height: 300px;
   /* object-fit: contain; */
 }
 
@@ -605,19 +594,13 @@ footer {
   }
 
   #testimonials {
-    height: 1700px;
+    height: auto;
   }
 
   #testimonials .content {
     height: 700px;
     flex-direction: column;
     gap: 100px;
-  }
-
-  .img_slide {
-    /* overflow: hidden; */
-    height: 100%;
-    /* object-fit: contain; */
   }
 
   #recent_work .content {
@@ -641,8 +624,6 @@ footer {
 @media (max-width: 1000px) {
   #hide.content {
     display: none;
-    background-color: red;
-    /* visibility: hidden; */
   }
 }
 
@@ -654,5 +635,52 @@ footer {
   .box {
     width: 150px;
     height: 60px;
+  }
+  header#hide {
+    display: hidden;
+  }
+
+  .client {
+    width: 400px;
+  }
+
+  #testimonials .left {
+    margin-left: 10px;
+  }
+
+  .text.left {
+    display: flex;
+    justify-self: center;
+    width: 300px;
+  }
+
+  p.left {
+    width: 300px;
+  }
+
+  p.middle {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    width: 390px;
+  }
+
+  .submit {
+    width: 400px;
+  }
+
+  .img_slide {
+    height: 200px;
+  }
+
+  #case_studies .content {
+    gap: 20px;
+    flex-direction: column;
+    height: 600px;
   }
 }
