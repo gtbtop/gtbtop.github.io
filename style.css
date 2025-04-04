@@ -628,12 +628,22 @@ footer {
 }
 
 @media (max-width: 800px) { 
+  nav ul {
+    font-size: 10px;
+    text-align: center;
+    gap: 25px;
+  }
+
   #hide.icons {
     display: none;
   }
 
   #main .content {
     height: 850px;
+  }
+
+  #recent_work .hide {
+    display: none;
   }
 
   .box {
