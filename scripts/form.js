@@ -23,21 +23,27 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
 
     email = form.email.value.trim();
-    phone = form.mobile.value.trim();
+    mobile = form.mobile.value.trim();
     message = form.message.value.trim();
 
     if (!emailRegex.test(email)) {
-      alert('Неправильный email');
+      // alert('Неправильный email');
+      form.email.setCustomValidity('Неправильный email');
+      form.email.reportValidity();
       form.email.focus();
       return;
     }
-    if (!phoneRegex.test(phone)) {
-      alert('Неправильный номер телефона');
-      form.phone.focus();
+    if (!phoneRegex.test(mobile)) {
+      // alert('Неправильный номер телефона');
+      form.mobile.setCustomValidity('Неправильный номер телефона');
+      form.mobile.reportValidity();
+      form.mobile.focus();
       return;
     }
     if (!textRegex.test(message)) {
-      alert('Русский + английский + знаки препинания');
+      // alert('Русский + английский + знаки препинания');
+      form.message.setCustomValidity('Русский + английский + знаки препинания');
+      form.message.reportValidity();
       form.message.focus();
       return;
     }
@@ -45,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submit_button.textContent = 'sending...';
     submit_button.disabled = true;
     submit_button.style.cursor = 'wait';
-    data = {phone, email, message};
+    data = {mobile, email, message};
 
     try {
       response = await fetch('https://jsonplaceholder.typicode.com/posts', {
